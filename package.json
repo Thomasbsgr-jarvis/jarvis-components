@@ -1,0 +1,39 @@
+{
+  "name": "@thomasbsgr-jarvis/jarvis-components",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "AGPL-3.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "next": "^16.2.9",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "next": "^16.2.9"
+  },
+  "allowScripts": {
+    "sharp@0.34.5": true,
+    "esbuild@0.27.7": true
+  }
+}
